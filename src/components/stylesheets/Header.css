@@ -1,0 +1,86 @@
+.headerStyle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.logoStyle {
+    width: 18em;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.navStyle {
+    width: 8em;
+    height: auto;
+    margin-top: 20;
+}
+
+.ulStyle {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.linkStyle {
+    margin-top: 3px;
+    stroke: #000;
+}
+
+.linkStyle:hover {
+    stroke: #3390ff;
+}
+
+#aboutButton {
+    width: 110%;
+}
+
+#projectButton {
+    width: 180%;
+}
+
+#contactButton {
+    width: 160%;
+}
+
+.pointer {
+    display: none;
+    position: absolute;
+    width: 3em;
+    padding-top: 1em;
+    margin-left: -4.5em;
+    left: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+    transition: all 1s ease-in-out;
+    animation: pointerAni 1s infinite;
+}
+
+@keyframes pointerAni {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 10px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.ulStyle li:first-child button:hover .pointer {
+    display: block;
+}
+
+.ulStyle li:nth-child(2) button:hover .pointer {
+    display: block;
+}
+
+.ulStyle li:nth-child(3) button:hover .pointer {
+    display: block;
+}

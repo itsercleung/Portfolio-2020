@@ -1,26 +1,81 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Header from "./components/Header";
+import FooterMenu from "./components/FooterMenu";
+import PopupBox from "./components/PopupBox";
+import TopBar from "./components/TopBar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css";
+
+class App extends Component {
+  state = {
+    open: false,
+    contentId: null,
+    isDark: false
+  };
+  closePopup = this.closePopup.bind(this);
+
+  componentDidUpdate() {
+    var html = document.querySelector("html");
+
+    //Set darkmode when handle dark button clicked from TopBar
+    if (this.state.isDark) {
+      html.classList.add("dark");
+    } else {
+      html.classList.remove("dark");
+    }
+  }
+
+  //HELPER METHODS
+  handlePopupShow = contentId => {
+    this.setState({
+      open: true,
+      contentId: contentId
+    });
+  };
+
+  handleDark = isDark => {
+    this.setState({ isDark: !isDark });
+  };
+
+  closePopup() {
+    this.setState({
+      open: false
+    });
+  }
+
+  //RENDER
+  render() {
+    const styles = {
+      white: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
+      black: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
+      topBarHeight: 40,
+      footerMenuHeight: 50
+    };
+
+    const wrapperStyles = {
+      backgroundColor: styles.black(0.05),
+      minHeight: "100vh",
+      position: "relative"
+    };
+
+    return (
+      <div styles={wrapperStyles}>
+        <TopBar handleDark={this.handleDark} isDark={this.state.isDark} />
+        <Header
+          handlePopupShow={this.handlePopupShow}
+          isDark={this.state.isDark}
+          styles={styles}
+        />
+        <PopupBox
+          closePopup={this.closePopup}
+          open={this.state.open}
+          contentId={this.state.contentId}
+          isDark={this.state.isDark}
+        />
+        <FooterMenu isDark={this.state.isDark} styles={styles} />
+      </div>
+    );
+  }
 }
 
 export default App;

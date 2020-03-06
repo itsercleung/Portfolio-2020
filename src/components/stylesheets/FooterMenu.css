@@ -1,0 +1,40 @@
+.iconStyle {
+    width: 2.24em;
+    height: auto;
+    padding: 10px;
+}
+
+.footerDesc {
+    width: 100%;
+    position: relative;
+}
+
+.footerDescImage {
+    width: 10em;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.footerDesc a:hover #footerIcon {
+    stroke: #3390ff;
+}
+
+.iconStyle {
+    stroke: #000000;
+}
+
+#icon0 a:hover {
+    stroke: #F1502F;
+}
+
+#icon1 a:hover {
+    stroke: #0072B1;
+}
+
+#icon2 a:hover {
+    stroke: #cc3333;
+}

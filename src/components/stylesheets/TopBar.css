@@ -1,0 +1,22 @@
+.topbarWrapper {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.moon {
+    width: 2.2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.sun {
+    width: 2.2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}

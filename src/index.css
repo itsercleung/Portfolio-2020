@@ -1,13 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Lo-Res12Regular';
+  src: local('Lo-Res12Regular'), url(./fonts/Lo-Res12Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lo-Res12Bold';
+  src: local('Lo-Res12BoldAlt'), url(./fonts/Lo-Res12BoldAlt.ttf) format('truetype');
 }

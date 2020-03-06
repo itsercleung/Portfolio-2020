@@ -1,0 +1,46 @@
+.dialog {
+    width: 100%;
+    position: relative;
+}
+
+.me {
+    width: 25%;
+    position: relative;
+
+    transition: all 0.5s ease-in-out;
+    animation: meAni 0.5s infinite;
+}
+
+@keyframes meAni {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 5px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.okButton {
+    color: #fff;
+    background-color: #000 !important;
+    padding: 3px !important;
+    position: absolute;
+    font-family: "Lo-Res12Bold";
+    font-size: 1.5em;
+    width: 3em;
+    left: 50%;
+    top: 37%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-decoration: none;
+}
+
+.okButton:hover {
+    color: #000;
+    background-color: #3390ff !important;
+}
