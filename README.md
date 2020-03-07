@@ -2,7 +2,7 @@
 
 `Updated MAR 2020`
 
-Morning y'all! This is simply... my portfolio website. Feel free to look at it 🤠
+This is simply... my portfolio website. Feel free to look at it 🤠
 
 #### Where to go?
 
