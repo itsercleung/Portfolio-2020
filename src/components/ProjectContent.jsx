@@ -1,8 +1,22 @@
 import React, { Component } from "react";
+import { ReactComponent as Book } from "../assets/book.svg";
+import { ReactComponent as Pen } from "../assets/pen.svg";
+
+import "./stylesheets/ProjectContent.css";
 
 class ProjectContent extends Component {
   render() {
-    return <div>Projects</div>;
+    const { closePopup } = this.props;
+
+    return (
+      <div>
+        <Book className="book" />
+        <Pen className="pen" />
+        <button className="projectButton" onClick={closePopup}>
+          DONE!
+        </button>
+      </div>
+    );
   }
 }
 

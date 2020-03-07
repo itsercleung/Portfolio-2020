@@ -18,7 +18,7 @@ a .zoom {
   transition: transform 0.2s;
 }
 
-a:hover .zoom {
+a .zoom:hover {
   transform: scale(1.05) !important;
 }
 
@@ -26,7 +26,7 @@ a .zoomspec {
   transition: transform 0.2s;
 }
 
-a:hover .zoomspec {
+a .zoomspec:hover {
   transform: scale(1.05) translateY(-1.6em) !important;
 }
 
@@ -34,7 +34,7 @@ button .zoom {
   transition: transform 0.2s;
 }
 
-button:hover .zoom {
+button .zoom:hover {
   transform: scale(1.05) !important;
 }
 
@@ -48,6 +48,7 @@ html {
 }
 
 svg {
+  overflow: visible;
   transition: stroke 0.5s ease-in;
 }
 

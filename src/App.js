@@ -34,7 +34,9 @@ class App extends Component {
   };
 
   handleDark = isDark => {
-    this.setState({ isDark: !isDark });
+    this.setState({
+      isDark: !isDark
+    });
   };
 
   closePopup() {

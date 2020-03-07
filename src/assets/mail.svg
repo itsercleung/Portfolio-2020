@@ -6,7 +6,10 @@
 <path stroke="#3390ff" d="M5 4h19M5 5h1M10 5h1M13 5h1M18 5h6M5 6h1M8 6h1M10 6h1M13 6h1M16 6h1M18 6h6M5 7h1M10 7h1M13 7h1M17 7h7M5 8h1M8 8h1M10 8h1M13 8h1M16 8h1M18 8h6M5 9h19" />
 <rect stroke="rgba(0,0,0,0)" x="5" y="14" width="26.3" height="2.3" fill="#3390ff"></rect>
 <text stroke="rgba(0,0,0,0)" font-family="Lo-Res12Regular" font-size="2" textAnchor="middle" x="8.8" y="12">TO ERIC,</text>
-<text font-family="Lo-Res12Bold" font-size="2" x="5.3" y="16">leung.eric24@gmail.com</text>
+<a xlink:href="mailto:leung.eric24@gmail.com" target="_blank">
+    <text id="svgEmail" font-family="Lo-Res12Bold" font-size="2" x="5.3" y="16">leung.eric24@gmail.com</text>
+</a>
+
 <text font-family="Lo-Res12Regular" font-size="2" x="5.3" y="20">AOTEROA, NEW ZEALAND</text>
 
 </svg>

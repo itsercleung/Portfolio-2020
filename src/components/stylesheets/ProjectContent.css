@@ -1,33 +1,32 @@
-.mail {
+.book {
     width: 100%;
     position: relative;
 }
 
-.paperplane {
-    width: 25%;
-    transform: rotate(-10deg);
+.pen {
+    width: 13%;
     position: absolute;
-    top: 85%;
-    left: 100%;
-    animation: planeAni 1s infinite;
+    top: 65%;
+    left: -15%;
+    animation: penAni 0.8s infinite;
     animation-timing-function: ease-in-out;
 }
 
-@keyframes planeAni {
+@keyframes penAni {
     0% {
-        left: 100%;
+        top: 65%;
     }
 
     50% {
-        left: 98%;
+        top: 67%;
     }
 
     100% {
-        left: 100%;
+        top: 65%;
     }
 }
 
-.sendButton {
+.projectButton {
     color: #fff;
     background-color: #000 !important;
     padding: 3px !important;
@@ -35,18 +34,25 @@
     font-family: "Lo-Res12Bold";
     font-size: 1.5em;
     width: 3em;
-    left: 50%;
-    top: 78%;
+    left: 85%;
+    top: 68%;
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     text-decoration: none;
 }
 
-.sendButton:hover {
+.projectButton:hover {
     color: #fff;
     background-color: #3390ff !important;
 }
 
-#svgEmail:hover {
-    fill: #fff !important;
+#EP path {
+    opacity: 0.3;
+    transition: all 0.2s;
+    overflow: visible !important;
+}
+
+#EP:hover path {
+    opacity: 1;
+    transform: scale(1.1) translateX(-0.1em) !important;
 }
