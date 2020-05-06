@@ -8,6 +8,20 @@ import { ReactComponent as Pointer } from "../assets/pointer.svg";
 import "./stylesheets/Header.css";
 
 class Header extends Component {
+  componentDidMount() {
+    let svgList = document.getElementsByClassName("zoom");
+
+    if (this.props.isDark) {
+      for (var i = 0; i < svgList.length; i++) {
+        svgList[i].classList.add("darkSvg");
+      }
+    } else {
+      for (var j = 0; j < svgList.length; j++) {
+        svgList[j].classList.remove("darkSvg");
+      }
+    }
+  }
+
   componentDidUpdate() {
     let svgList = document.getElementsByClassName("zoom");
 

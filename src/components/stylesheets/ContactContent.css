@@ -44,9 +44,45 @@
 
 .sendButton:hover {
     color: #fff;
-    background-color: #3390ff !important;
+    background-color: #0e00ff !important;
 }
 
 #svgEmail:hover {
     fill: #fff !important;
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    .mail {
+        width: 100%;
+    }
+
+    .paperplane {
+        width: 30%;
+    }
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 700px) {
+    .popup-content {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        padding: 0 !important;
+    }
+
+    .mail {
+        width: 200%;
+    }
+
+    .paperplane {
+        width: 30%;
+        margin-left: 50%;
+    }
+
+    .sendButton {
+        left: 100% !important;
+        top: 80%;
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
 }

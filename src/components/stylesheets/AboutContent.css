@@ -42,9 +42,44 @@
 
 .okButton:hover {
     color: #fff;
-    background-color: #3390ff !important;
+    background-color: #0e00ff !important;
 }
 
 #svgName:hover {
     fill: #fff !important;
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    .dialog {
+        width: 100%;
+    }
+
+    .me {
+        width: 30%;
+    }
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 700px) {
+    .popup-content {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        padding: 0 !important;
+    }
+
+    .dialog {
+        width: 200%;
+    }
+
+    .me {
+        width: 40%;
+    }
+
+    .okButton {
+        left: 100% !important;
+        top: 40%;
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
 }

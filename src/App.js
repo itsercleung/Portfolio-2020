@@ -10,9 +10,15 @@ class App extends Component {
   state = {
     open: false,
     contentId: null,
-    isDark: false
+    isDark: true,
   };
   closePopup = this.closePopup.bind(this);
+
+  componentDidMount() {
+    var html = document.querySelector("html");
+
+    html.classList.add("dark");
+  }
 
   componentDidUpdate() {
     var html = document.querySelector("html");
@@ -26,22 +32,22 @@ class App extends Component {
   }
 
   //HELPER METHODS
-  handlePopupShow = contentId => {
+  handlePopupShow = (contentId) => {
     this.setState({
       open: true,
-      contentId: contentId
+      contentId: contentId,
     });
   };
 
-  handleDark = isDark => {
+  handleDark = (isDark) => {
     this.setState({
-      isDark: !isDark
+      isDark: !isDark,
     });
   };
 
   closePopup() {
     this.setState({
-      open: false
+      open: false,
     });
   }
 
@@ -51,13 +57,13 @@ class App extends Component {
       white: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
       black: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
       topBarHeight: 40,
-      footerMenuHeight: 50
+      footerMenuHeight: 50,
     };
 
     const wrapperStyles = {
       backgroundColor: styles.black(0.05),
       minHeight: "100vh",
-      position: "relative"
+      position: "relative",
     };
 
     return (
@@ -65,8 +71,8 @@ class App extends Component {
         <TopBar handleDark={this.handleDark} isDark={this.state.isDark} />
         <Header
           handlePopupShow={this.handlePopupShow}
-          isDark={this.state.isDark}
           styles={styles}
+          isDark={this.state.isDark}
         />
         <PopupBox
           closePopup={this.closePopup}

@@ -43,7 +43,7 @@
 
 .projectButton:hover {
     color: #fff;
-    background-color: #3390ff !important;
+    background-color: #0e00ff !important;
 }
 
 #EP path {
@@ -55,4 +55,41 @@
 #EP:hover path {
     opacity: 1;
     transform: scale(1.1) translateX(-0.1em) !important;
+}
+
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    .book {
+        width: 100%;
+    }
+
+    .pen {
+        width: 30%;
+    }
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 700px) {
+    .popup-content {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        padding: 0 !important;
+    }
+
+    .book {
+        width: 200%;
+    }
+
+    .pen {
+        margin-left: 15%;
+        width: 30%;
+    }
+
+    .projectButton {
+        left: 100% !important;
+        top: 75%;
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
 }
