@@ -7,7 +7,7 @@
 <rect stroke="rgba(0,0,0,0)" x="5" y="14" width="26.3" height="2.3" fill="#0e00ff"></rect>
 <text stroke="rgba(0,0,0,0)" font-family="Lo-Res12Regular" font-size="2" textAnchor="middle" x="8.8" y="12">TO ERIC,</text>
 <a xlink:href="mailto:leung.eric24@gmail.com" target="_blank">
-    <text id="svgEmail" font-family="Lo-Res12Bold" font-size="2" x="5.3" y="16">leung.eric24@gmail.com</text>
+    <text id="svgEmail" fill="#ffffff" font-family="Lo-Res12Bold" font-size="2" x="5.3" y="16">leung.eric24@gmail.com</text>
 </a>
 
 <text font-family="Lo-Res12Regular" font-size="2" x="5.3" y="20">AOTEROA, NEW ZEALAND</text>

@@ -9,7 +9,7 @@ class ProjectContent extends Component {
     const { closePopup } = this.props;
 
     return (
-      <div>
+      <div className="wrapper">
         <Book className="book" />
         <Pen className="pen" />
         <button className="projectButton" onClick={closePopup}>

@@ -1,3 +1,8 @@
+.wrapper {
+    width: 80% !important;
+    left: 5% !important;
+}
+
 .book {
     width: 100%;
     position: relative;
@@ -60,6 +65,11 @@
 
 /* Tablet Landscape */
 @media screen and (max-width: 1060px) {
+    .wrapper {
+        width: 100% !important;
+        left: 0% !important;
+    }
+
     .book {
         width: 100%;
     }
@@ -71,6 +81,11 @@
 
 /* Tabled Portrait */
 @media screen and (max-width: 700px) {
+    .wrapper {
+        width: 100% !important;
+        left: 0% !important;
+    }
+
     .popup-content {
         margin-right: 0 !important;
         margin-left: 0 !important;
